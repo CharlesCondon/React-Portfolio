@@ -42,19 +42,19 @@ const Navbar = () => {
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-900 outline outline-2 m-1 rounded-tr-lg'>
-                        <a  className='flex justify-between items-center w-full'
+                        <a  className='flex justify-between items-center w-full' target='_blank'
                             href='https://www.linkedin.com/in/charles-condon-991594149/'>LinkedIn<FaLinkedin size={30}/></a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-900 outline outline-2 m-1'>
-                        <a  className='flex justify-between items-center w-full'
+                        <a  className='flex justify-between items-center w-full' target='_blank'
                             href='https://github.com/CharlesCondon'>Github<FaGithub size={30}/></a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-900 outline outline-2 my-1 pr-3'>
-                        <a  className='flex justify-between items-center w-full'
-                            href='https://www.linkedin.com/in/charles-condon-991594149/'>Giphy<img src={Giphy} alt="Giphy logo" className='w-[40px]' /></a>
+                        <a  className='flex justify-between items-center w-full' target='_blank'
+                            href='https://giphy.com/charlescon'>Giphy<img src={Giphy} alt="Giphy logo" className='w-[40px]' /></a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-900 outline outline-2 m-1 rounded-br-lg'>
-                        <a  className='flex justify-between items-center w-full'
+                        <a  className='flex justify-between items-center w-full' target='_blank'
                             href='https://docs.google.com/document/d/1oNYIew9EtKe56GV77732yGceXrYnwwlEWtX5XdRqyr8/edit?usp=sharing'>Resume<BsFillPersonLinesFill size={30}/></a>
                     </li>
                 </ul>
