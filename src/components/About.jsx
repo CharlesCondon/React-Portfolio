@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div name="about" className='bg-polka bg-repeat w-full h-full md:h-screen'>
         <div className='flex flex-col justify-center items-center w-full h-full fade'>
-            <div className='xl:w-[45%] w-[80%] m-auto outline outline-2 rounded-tr-lg rounded-bl-lg rounded-[50px] bg-black/30 mt-[75px] mb-[25px]'>
+            <div className='xl:w-[60%] w-[80%] m-auto outline outline-2 rounded-tr-lg rounded-bl-lg rounded-[50px] bg-black/30 mt-[75px] mb-[25px]'>
                 <div className='outline outline-2 m-1 rounded-tr-lg rounded-bl-lg rounded-[50px]'>
                     <h1 className='py-3 px-6 text-[4rem]'>Charles</h1>
                     <p className='py-4 px-6 text-[1rem] xl:text-[1.5rem]'>Hi! My name is Charles Condon and I am a full-stack developer as well as a digital illustrator.</p>
