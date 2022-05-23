@@ -4,7 +4,7 @@ import Hand from '../assets/hand.png'
 
 const Home = () => {
     return (
-        <div name='home' className="bg-polka w-full h-screen">
+        <div name='home' className="bg-polka w-full h-screen overflow-hidden">
             <div className='max-w-[1000px] mx-auto px-8 flex flex-col h-full relative z-0 fade'>
 
                 <h1 className='xl:text-[10vw] lg:text-[12vw] text-[16vw] mt-[37%] xl:mt-[15%] lg:mt-[15%] mb-5 md:mt-[20%] md:text-center xl:relative xl:left-[-30%] lg:relative lg:left-[-15%] textStroke'>CHARLES <br/> CONDON;</h1>
