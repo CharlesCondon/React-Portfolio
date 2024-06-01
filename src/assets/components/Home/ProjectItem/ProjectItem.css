@@ -21,6 +21,7 @@
 }
 .projectItem:hover {
     background-color: rgba(13, 13, 13, 1);
+    border-radius: 10px;
     box-shadow: 0 0 4.5px rgb(242, 170, 76), 0 0 9px rgb(242, 170, 76), 0 0 13.5px rgb(242, 170, 76), 0 0 18px rgb(242, 170, 76);
 }
 .projectItem > h2 {
@@ -39,6 +40,16 @@
     border-radius: 999px;
     padding: 5px 10px;
     font-style: italic;
+}
+
+.projectImg {
+    position: absolute;
+    left: 37%;
+}
+.projectImg > img {
+    width: 50%;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {
