@@ -1,0 +1,48 @@
+
+
+.homeHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.headText > h1 {
+    font-size: 10vw;
+    -webkit-text-stroke: 1px var(--accent-color);
+    font-family: "Merienda", cursive;
+}
+.headText > p {
+    font-size: 2.5vw;
+    padding-left: 4px;
+}
+
+.headImg {
+    position: relative;
+}
+
+#hand {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .homeHead {
+        flex-direction: column;
+        margin-bottom: 3.5rem;
+    }
+    .headText {
+        text-align: center;
+    }
+    .headText > h1 {
+        font-size: 18vw;
+    }
+    .headText > p {
+        font-size: 4.5vw;
+        padding-left: 0px;
+    }
+}

@@ -1,0 +1,23 @@
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+.navLinks > button {
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: 1vw;
+    border: none;
+    font-family: "Nanum Gothic", sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .navLinks {
+        padding: 40px 0;
+    }
+    .navLinks > button {
+        font-size: 4vw;
+    }
+}

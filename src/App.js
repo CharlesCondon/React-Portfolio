@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes, Route} from 'react-router-dom';
+import Navbar from './assets/components/Navbar/Navbar';
+import Home from './assets/components/Home/Home';
+import Projects from './assets/components/Projects/Projects';
+import About from './assets/components/About/About';
+import Contact from './assets/components/Contact/Contact';
+import { ReactP5Wrapper } from '@p5-wrapper/react';
+import rainSketch from './assets/js/rainSketch';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<div className='sketchCont'>
+				<ReactP5Wrapper sketch={rainSketch} />
+			</div>
+			<div className="AppContent">
+				<Navbar/>
+					<Routes>
+						<Route index path='/' element={
+								<Home/>
+						}/>
+						<Route path='/projects' element={
+								<Projects/>
+						} />
+						<Route path='/about' element={
+								<About/>
+						} />
+						<Route path='/contact' element={
+								<Contact/>
+						} />
+					</Routes>
+				{/* <Footer/> */}
+			</div>
+		</div>
+	);
 }
 
 export default App;
