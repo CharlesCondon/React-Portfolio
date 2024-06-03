@@ -1,5 +1,6 @@
 .projectsCont > p {
     margin-bottom: 10px;
+    font-size: 1vw;
 }
 
 .projectsList {
@@ -48,6 +49,7 @@
 }
 .projectImg > img {
     width: 50%;
+    max-width: 671px;
     border: 2px solid var(--accent-color);
     border-radius: 10px;
 }

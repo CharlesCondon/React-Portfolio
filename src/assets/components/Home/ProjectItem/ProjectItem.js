@@ -14,13 +14,13 @@ function ProjectItem({project}) {
             setToggleImg(false)
         }
     }
-    console.log(project)
+
     return (
         <div className='projectItem' onClick={handleClick} onMouseEnter={handleHover} onMouseLeave={handleHover}>
             <h2>{project.title}</h2>
             <div className='projectTagList'>
-                {project.tags.map((t) => {
-                    return <p className='projectTag'>{t}</p>
+                {project.tags.map((t,i) => {
+                    return <p key={i} className='projectTag'>{t}</p>
                 })}
             </div>
             {toggleImg && (<div className='projectImg'><img src={project.image} alt='' /></div>)}
