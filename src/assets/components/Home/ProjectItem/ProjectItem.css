@@ -70,4 +70,8 @@
     .projectTagList {
         flex-wrap: wrap;
     }
+    .projectsCont > p {
+        margin-bottom: 10px;
+        font-size: 4vw;
+    }
 }

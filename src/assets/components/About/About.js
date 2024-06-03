@@ -1,15 +1,10 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
+import { ReactP5Wrapper } from '@p5-wrapper/react'
 import './About.css';
 import retro from '../../images/retro.jpg';
-import flair from '../../images/flair.png';
+import buff from '../../js/buffer'
 
 function About() {
-    const navigate = useNavigate();
-
-    function handleNav(e) {
-		navigate(e)
-	}
 
     return (
         <div className='aboutCont'>
@@ -34,9 +29,10 @@ function About() {
                     </div>
                         
                     <div className='aboutImg'>
-                        <img className='imgFlair' src={flair} alt='' />
+                        <div className='aboutBuffer' id='bufferDiv'>
+                            <ReactP5Wrapper sketch={buff} />
+                        </div>
                         <img className='selfPortrait' src={retro} alt='' />
-                        <img className='imgFlair' src={flair} alt='' />
                     </div>   
                     
                 </div>
