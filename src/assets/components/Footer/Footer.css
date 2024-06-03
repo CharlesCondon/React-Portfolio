@@ -1,0 +1,13 @@
+.footerCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2.5rem;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 calc(8vw + 40px);
+}

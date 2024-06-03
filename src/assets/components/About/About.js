@@ -10,7 +10,6 @@ function About() {
         <div className='aboutCont'>
             <div className='aboutHead'>
                 <div className='aboutHero'>
-                    <h1>Hey there!</h1>
                     <h1 className='aboutHeroName'>I'm Charles Condon</h1>
                 </div>
                 <div className='aboutHeadText'>

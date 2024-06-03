@@ -12,11 +12,12 @@
 
 .AppContent {
   position: relative;
+  min-height: 100vh;
   z-index: 10;
   padding: 0 40px;
   max-width: 1400px;
   margin: auto;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .sketchCont {
