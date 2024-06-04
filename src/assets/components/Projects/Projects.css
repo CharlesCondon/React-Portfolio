@@ -26,20 +26,31 @@
     flex-direction: column;
     gap: 5px;
 }
-.projectPageItem > h2 {
+
+.projectItemHead {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.projectItemHead > h2 {
     font-size: 28px;
     font-family: "Merienda", cursive;  
     margin-top: 10px;
 }
-.projectPageItem > a {
+.projectItemHead > a {
     color: var(--accent-color);
     margin-top: 10px;
+    text-decoration: none;
+}
+.projectItemHead > a:hover {
+    text-decoration: underline;
 }
 
 .projectPageImg {
     display: flex;
     width: 100%;  
     height: 100%;
+    border: 1px solid var(--accent-color)
 }
 .projectPageImg > img {
     width: 100%;
@@ -82,5 +93,14 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 80px;
+    }
+    .projectItemHead {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .projectItemHead > a {
+        text-decoration: underline;
     }
 }

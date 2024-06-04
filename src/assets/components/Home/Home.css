@@ -1,9 +1,13 @@
+.homeCont {
+}
+
 .homeHead {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .headText {
@@ -28,18 +32,91 @@
     position: relative;
 }
 
-#hand {
+.scrollPageCont {
     position: absolute;
-    width: 100%;
     bottom: 0;
-    left: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.scrollPageLink {
+    position: relative;
+    transition: filter .25s ease-in-out;
+}
+.scrollPageLink:hover {
+    filter: grayscale(100%) brightness(200%);
+    width: 70px;
+}
+.scrollPageImg {
+    width: 60px;
+}
+.arrow {
+    position: absolute;
+    left: 0;
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.rotating {
+    -webkit-animation: rotating 6s linear infinite;
+    -moz-animation: rotating 6s linear infinite;
+    -ms-animation: rotating 6s linear infinite;
+    -o-animation: rotating 6s linear infinite;
+    animation: rotating 6s linear infinite;
+}
+
+.projectsCont {
+    margin-bottom: 10rem;
+}
+
+.homeContact > h2 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+.homeContact > button {
+    color: var(--accent-color);
+    background-color: transparent;
+    border: none;
+    font-size: 52px;
+    font-family: "Merienda", cursive;
+    font-style: italic;
+    cursor: pointer;
+    transition: all .25s ease-in;
+}
+.homeContact > button:hover {
+    color: white;
 }
 
 
 @media only screen and (max-width: 768px) {
     .homeHead {
         flex-direction: column;
-        margin-bottom: 0;
+        padding-bottom: 5rem;
+        margin-bottom: 5rem;
     }
     .headText {
         text-align: center;

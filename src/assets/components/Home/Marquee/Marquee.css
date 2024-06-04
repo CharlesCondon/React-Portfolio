@@ -1,0 +1,46 @@
+.marquee-container {
+    width: 200%;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 10rem;
+    overflow: hidden;
+    margin-left: -50%;
+}
+  
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    animation-delay: -12.5s;
+    animation-play-state: running;
+}
+
+.marquee2 {
+    animation-delay: -7.5s !important;
+}
+  
+.marquee-item {
+    display: inline-block;
+    padding: 0 .25em;
+    font-size: 8vw;
+    font-family: "Merienda", cursive;
+}
+  
+@keyframes marquee {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0) }
+}
+ 
+@media only screen and (max-width: 768px) {
+    .marquee-container {
+        width: 200%;
+        white-space: nowrap;
+        position: relative;
+        margin-bottom: 5rem;
+        overflow: hidden;
+        margin-left: -50%;
+    }
+    .marquee-item {
+        font-size: 18vw;
+    }
+}

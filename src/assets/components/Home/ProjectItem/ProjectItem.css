@@ -1,6 +1,6 @@
-.projectsCont > p {
-    margin-bottom: 10px;
-    font-size: 1vw;
+.projectsCont > h2 {
+    margin-bottom: 40px;
+    font-size: 52px;
 }
 
 .projectsList {
@@ -23,7 +23,7 @@
 .projectItem:hover {
     background-color: rgba(13, 13, 13, 1);
     border-radius: 10px;
-    box-shadow: 0 0 4.5px rgb(242, 170, 76), 0 0 9px rgb(242, 170, 76), 0 0 13.5px rgb(242, 170, 76), 0 0 18px rgb(242, 170, 76);
+    box-shadow: 0 0 3.5px rgb(255, 255, 255), 0 0 7.5px rgb(255, 255, 255), 0 0 11.5px rgb(255, 255, 255), 0 0 16px rgb(255, 255, 255);
 }
 .projectItem > h2 {
     font-size: 2.5vw;
@@ -45,11 +45,12 @@
 
 .projectImg {
     position: absolute;
-    left: 37%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%);
 }
 .projectImg > img {
-    width: 50%;
-    max-width: 671px;
+    width: 100%;
     border: 2px solid var(--accent-color);
     border-radius: 10px;
 }

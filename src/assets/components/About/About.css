@@ -97,7 +97,7 @@
 .aboutLinks > a:hover {
     border-radius: 10px;
     background-color: rgba(13, 13, 13, 1);
-    box-shadow: 0 0 2.5px rgb(242, 170, 76), 0 0 5px rgb(242, 170, 76), 0 0 7.5px rgb(242, 170, 76), 0 0 10px rgb(242, 170, 76);
+    box-shadow: 0 0 2px rgb(255, 255, 255), 0 0 4px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
 }
 
 .aboutFooter {

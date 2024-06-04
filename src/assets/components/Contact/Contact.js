@@ -10,21 +10,21 @@ function Contact() {
             </div>
             
             <div id="subContainer">
-                <div class="submission">
+                <div className="submission">
                     <form
                         id="contactForm"
                         action="https://formspree.io/f/xayzdoob"
                         method="POST"
                     >
                         <input
-                            class="req"
+                            className="req"
                             type="text"
                             name="name"
                             placeholder="NAME*"
                             required
                         />
                         <input
-                            class="req"
+                            className="req"
                             type="email"
                             name="_replyto"
                             placeholder="EMAIL*"

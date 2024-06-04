@@ -12,6 +12,9 @@
     font-family: "Nanum Gothic", sans-serif;
     cursor: pointer;
 }
+.navLinks > button:hover {
+    color: white;
+}
 
 @media only screen and (max-width: 768px) {
     .navLinks {
