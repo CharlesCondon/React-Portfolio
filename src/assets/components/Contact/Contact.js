@@ -1,7 +1,19 @@
 import React from 'react'
 import './Contact.css'
+import { useLocation } from "react-router-dom";
 
 function Contact() {
+    const location = useLocation();
+
+    React.useEffect(() => {
+        window.gtag("event", "page_view", {
+            page_path: location.pathname + location.search + location.hash,
+            page_search: location.search,
+            page_hash: location.hash,
+            page_title: "Contact"
+        });
+    }, [location]);
+
     return (
         <div className='contactCont'>
             <div className='contactHead'>

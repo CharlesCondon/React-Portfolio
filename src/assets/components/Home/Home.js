@@ -16,6 +16,7 @@ import wordle from '../../images/wordle.jpeg';
 import circle from '../../images/circle.png';
 import down from '../../images/down.png';
 import Marquee from './Marquee/Marquee';
+import { useLocation } from "react-router-dom";
 
 const words = [
     "Hello",
@@ -35,6 +36,17 @@ const words = [
   
 
 function Home() {
+    const location = useLocation();
+
+    React.useEffect(() => {
+        window.gtag("event", "page_view", {
+            page_path: location.pathname + location.search + location.hash,
+            page_search: location.search,
+            page_hash: location.hash,
+            page_title: "Home"
+        });
+    }, [location]);
+
     const navigate = useNavigate();
 
     function handleNav(e) {

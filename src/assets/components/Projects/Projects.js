@@ -9,8 +9,20 @@ import visualizer2 from '../../images/musicSite2.jpeg';
 import wordle from '../../images/wordle.jpeg';
 import ProjectPageItem from './ProjectPageItem/ProjectPageItem';
 import ProjectList from './ProjectList/ProjectList';
+import { useLocation } from "react-router-dom";
 
 function Projects() {
+    const location = useLocation();
+
+    React.useEffect(() => {
+        window.gtag("event", "page_view", {
+            page_path: location.pathname + location.search + location.hash,
+            page_search: location.search,
+            page_hash: location.hash,
+            page_title: "Projects"
+        });
+    }, [location]);
+
     const descriptions = [
         "A vacation planning application using computer vision AI to plan a full vacation for users based on input images.",
         "An ecommerce business partnered with an AI startup that takes your measurements for fitted suits without leaving one's home.",

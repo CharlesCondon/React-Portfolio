@@ -3,8 +3,19 @@ import { ReactP5Wrapper } from '@p5-wrapper/react'
 import './About.css';
 import retro from '../../images/retro.jpg';
 import buff from '../../js/buffer'
+import { useLocation } from "react-router-dom";
 
 function About() {
+    const location = useLocation();
+
+    React.useEffect(() => {
+        window.gtag("event", "page_view", {
+            page_path: location.pathname + location.search + location.hash,
+            page_search: location.search,
+            page_hash: location.hash,
+            page_title: "About"
+        });
+    }, [location]);
 
     return (
         <div className='aboutCont'>
