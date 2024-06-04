@@ -112,8 +112,8 @@
 @media only screen and (max-width: 768px) {
     .homeHead {
         flex-direction: column;
-        padding-bottom: 10rem;
-        margin-bottom: 5rem;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
     }
     .headText {
         text-align: center;
@@ -126,5 +126,8 @@
     .headText > p {
         font-size: 4.5vw;
         padding-left: 0px;
+    }
+    .scrollPageCont {
+        display: none;
     }
 }
