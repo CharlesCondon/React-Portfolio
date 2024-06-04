@@ -3,7 +3,6 @@ import './Home.css';
 import sphere from '../../js/sphere';
 // import cube from '../../js/cube';
 import { ReactP5Wrapper } from '@p5-wrapper/react';
-import { motion } from "framer-motion"
 import {useNavigate} from 'react-router-dom';
 import ProjectItem from './ProjectItem/ProjectItem';
 import talrd from '../../images/talrd.png';

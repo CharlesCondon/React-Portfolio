@@ -7,7 +7,6 @@ import cpc from '../../images/cpc.jpeg';
 import visualizer from '../../images/musicSite.jpeg';
 import visualizer2 from '../../images/musicSite2.jpeg';
 import wordle from '../../images/wordle.jpeg';
-import ProjectPageItem from './ProjectPageItem/ProjectPageItem';
 import ProjectList from './ProjectList/ProjectList';
 import { useLocation } from "react-router-dom";
 
