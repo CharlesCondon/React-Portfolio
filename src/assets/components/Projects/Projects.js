@@ -24,9 +24,9 @@ function Projects() {
                     <p>A vacation planning application using computer vision AI to plan a full vacation for users based on input images.</p>
                     <a href='https://www.auradelvista.com/' target='_blank' rel='noreferrer' >Visit Site {'>'}</a>
                     <div className='projectPageTagList'>
-                        <p className='projectPageTag'>Website Design</p>
+                        {/* <p className='projectPageTag'>Website Design</p>
                         <p className='projectPageTag'>Development</p>
-                        <p className='projectPageTag'>UI/UX</p>
+                        <p className='projectPageTag'>UI/UX</p> */}
                     </div>
                 </div>
                 <div className='projectPageItem'>
@@ -37,9 +37,9 @@ function Projects() {
                     <p>An ecommerce business partnered with an AI startup that takes your measurements for fitted suits without leaving one's home.</p>
                     <a href='https://talrdsuits.com/' target='_blank' rel='noreferrer' >Visit Site {'>'}</a>
                     <div className='projectPageTagList'>
-                        <p className='projectPageTag'>Website Design</p>
+                        {/* <p className='projectPageTag'>Website Design</p>
                         <p className='projectPageTag'>Branding</p>
-                        <p className='projectPageTag'>UI/UX</p>
+                        <p className='projectPageTag'>UI/UX</p> */}
                     </div>
                 </div>
                 <div className='projectPageItem'>
@@ -50,10 +50,10 @@ function Projects() {
                     <p>A design studio website template created to showcase fullstack web development.</p>
                     <a href='https://www.cpc-studio.com/' target='_blank' rel='noreferrer' >Visit Site {'>'}</a>
                     <div className='projectPageTagList'>
-                        <p className='projectPageTag'>Website Design</p>
+                        {/* <p className='projectPageTag'>Website Design</p>
                         <p className='projectPageTag'>Development</p>
                         <p className='projectPageTag'>Animation</p>
-                        <p className='projectPageTag'>UI/UX</p>
+                        <p className='projectPageTag'>UI/UX</p> */}
                     </div>
                 </div>
                 <div className='projectPageItem'>
@@ -64,9 +64,9 @@ function Projects() {
                     <p>Website redesign and rebranding for Chicago-based plumbing company.</p>
                     <a href='https://www.bossplumbingcorp.net/' target='_blank' rel='noreferrer' >Visit Site {'>'}</a>
                     <div className='projectPageTagList'>
-                        <p className='projectPageTag'>Website Design</p>
+                        {/* <p className='projectPageTag'>Website Design</p>
                         <p className='projectPageTag'>Branding</p>
-                        <p className='projectPageTag'>UI/UX</p>
+                        <p className='projectPageTag'>UI/UX</p> */}
                     </div>
                 </div>
                 <div className='projectPageItem'>
@@ -77,8 +77,8 @@ function Projects() {
                     <p>A POC music visualizer utilizing a combination of the Perlin noise algorithm, sound frequency, and volume to create a unique visual.</p>
                     <a href='https://charlescondon.github.io/PerlinNoise/' target='_blank' rel='noreferrer' >Visit Site {'>'}</a>
                     <div className='projectPageTagList'>
-                        <p className='projectPageTag'>Development</p>
-                        <p className='projectPageTag'>Animation</p>
+                        {/* <p className='projectPageTag'>Development</p>
+                        <p className='projectPageTag'>Animation</p> */}
                     </div>
                 </div>
                 <div className='projectPageItem'>
@@ -89,8 +89,8 @@ function Projects() {
                     <p>A POC music visualizer built off the previous iteration to create a wider variety of user-controlled visuals using given various templates.</p>
                     <a href='https://charlescondon.github.io/Geosynth/' target='_blank' rel='noreferrer' >Visit Site {'>'}</a>
                     <div className='projectPageTagList'>
-                        <p className='projectPageTag'>Development</p>
-                        <p className='projectPageTag'>Animation</p>
+                        {/* <p className='projectPageTag'>Development</p>
+                        <p className='projectPageTag'>Animation</p> */}
                     </div>
                 </div>
                 <div className='projectPageItem'>
@@ -101,8 +101,8 @@ function Projects() {
                     <p>A satirical recreation of the popular Wordle game with an added twist.</p>
                     <a href='https://www.wordletwo.com/' target='_blank' rel='noreferrer' >Visit Site {'>'}</a>
                     <div className='projectPageTagList'>
-                        <p className='projectPageTag'>Website Design</p>
-                        <p className='projectPageTag'>Development</p>
+                        {/* <p className='projectPageTag'>Website Design</p>
+                        <p className='projectPageTag'>Development</p> */}
                     </div>
                 </div>
             </div>  

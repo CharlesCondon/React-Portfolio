@@ -29,11 +29,17 @@ function rainSketch(p) {
     var drops = [];
     
     p.setup = () => {
-        p.createCanvas(window.innerWidth, window.innerHeight);
-            for (var i = 0; i < 500; i++) {
-                drops[i] = new Drop();
+        if (window.innerWidth > 768) {
+            p.createCanvas(window.innerWidth, window.innerHeight);
+                for (var i = 0; i < 500; i++) {
+                    drops[i] = new Drop();
+            }
+        } else {
+            p.createCanvas(window.innerWidth, window.innerHeight);
+                for (var i = 0; i < 100; i++) {
+                    drops[i] = new Drop();
+            }
         }
-        // initCanvas.parent("background");
     }
     
     p.draw = () => {
