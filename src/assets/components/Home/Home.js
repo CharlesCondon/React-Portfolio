@@ -65,7 +65,7 @@ function Home() {
             <Marquee words={words} />
             <div className='projectsCont'>
                 <h2 id='Works'>Works</h2>
-                <div className='projectsList'>
+                <div className='projectsList' >
                     <ProjectItem  project={{ title:'CPC-Studio', image:cpc, tags:['Website Design','Development', 'Animation', "UI/UX"], url:'https://www.cpc-studio.com/' }}/>
                     <ProjectItem  project={{ title:'Aura Vista', image:auraVista, tags:['Website Design','Development', "UI/UX"], url:'https://www.auradelvista.com/' }}/>
                     <ProjectItem  project={{ title:'Boss Plumbing', image:plumbing, tags:['Website Design','UI/UX', 'Branding'], url:'https://www.bossplumbingcorp.net/' }}/>

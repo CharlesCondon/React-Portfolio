@@ -8,6 +8,7 @@ import visualizer from '../../images/musicSite.jpeg';
 import visualizer2 from '../../images/musicSite2.jpeg';
 import wordle from '../../images/wordle.jpeg';
 import ProjectPageItem from './ProjectPageItem/ProjectPageItem';
+import ProjectList from './ProjectList/ProjectList';
 
 function Projects() {
     const descriptions = [
@@ -18,6 +19,50 @@ function Projects() {
         "A POC music visualizer utilizing a combination of the Perlin noise algorithm, sound frequency, and volume to create a unique visual.",
         "A POC music visualizer built off the previous iteration to create a wider variety of user-controlled visuals using given various templates.",
         "A satirical recreation of the popular Wordle game with an added twist."
+    ];
+    const projects = [
+        {
+            title:'Aura Vista',
+            desc:descriptions[0],
+            image:auraVista,
+            url:"https://www.auradelvista.com/"
+        },
+        {
+            title:'TALRD',
+            desc:descriptions[1],
+            image:talrd,
+            url:"https://talrdsuits.com/"
+        },
+        {
+            title:'CPC-Studio',
+            desc:descriptions[2],
+            image:cpc,
+            url:"https://www.cpc-studio.com/"
+        },
+        {
+            title:'Boss Plumbing',
+            desc:descriptions[3],
+            image:plumbing,
+            url:"https://www.bossplumbingcorp.net/"
+        },
+        {
+            title:'Music Visualizer',
+            desc:descriptions[4],
+            image:visualizer,
+            url:"https://charlescondon.github.io/PerlinNoise/"
+        },
+        {
+            title:'Music Visualizer 2',
+            desc:descriptions[5],
+            image:visualizer2,
+            url:"https://charlescondon.github.io/Geosynth/"
+        },
+        {
+            title:'Wordle 2',
+            desc:descriptions[6],
+            image:wordle,
+            url:"https://www.wordletwo.com/"
+        },
     ]
 
     return (
@@ -27,13 +72,7 @@ function Projects() {
                 <p>I love what I do, so I'm always working on something new.<br/> Check out some of my past projects.</p>
             </div>
             <div className='projectsPageList'>
-                <ProjectPageItem project={{image:auraVista, title:'Aura Vista', desc:descriptions[0], url:'https://www.auradelvista.com/'}} />
-                <ProjectPageItem project={{image:talrd, title:'TALRD', desc:descriptions[1], url:'https://talrdsuits.com/'}} />
-                <ProjectPageItem project={{image:cpc, title:'CPC-Studio', desc:descriptions[2], url:'https://www.cpc-studio.com/'}} />
-                <ProjectPageItem project={{image:plumbing, title:'Boss Plumbing', desc:descriptions[3], url:'https://www.bossplumbingcorp.net/'}} />
-                <ProjectPageItem project={{image:visualizer, title:'Music Visualizer', desc:descriptions[4], url:'https://charlescondon.github.io/PerlinNoise/'}} />
-                <ProjectPageItem project={{image:visualizer2, title:'Music Visualizer 2', desc:descriptions[5], url:'https://charlescondon.github.io/Geosynth/'}} />
-                <ProjectPageItem project={{image:wordle, title:'Wordle 2', desc:descriptions[6], url:'https://www.wordletwo.com/'}} />
+                <ProjectList projects={projects} />
             </div>  
         </div>
     )

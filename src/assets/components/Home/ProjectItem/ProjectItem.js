@@ -9,8 +9,8 @@ function ProjectItem({project}) {
     const [ref, inView] = useInView()
 
     const boxVariant = {
-        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-        hidden: { opacity: 0, y: 100 }
+        visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
+        hidden: { opacity: 0, y: 150 }
     };
 
     React.useEffect(() => {
@@ -38,7 +38,11 @@ function ProjectItem({project}) {
             initial="hidden"
             animate={control}
         >
-            <div className='projectItem' onClick={handleClick} onMouseEnter={handleHover} onMouseLeave={handleHover}>
+            <div tabindex="0" className='projectItem' onClick={handleClick} onMouseEnter={handleHover} onMouseLeave={handleHover} 
+                onKeyDown={(e) => {
+                    if (e.key === "Enter")
+                        handleClick();
+                }}>
                 <h2>{project.title}</h2>
                 <div className='projectTagList'>
                     {project.tags.map((t,i) => {
