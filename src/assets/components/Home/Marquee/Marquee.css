@@ -1,10 +1,16 @@
+.marquee-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
 .marquee-container {
-    width: 200%;
+    width: 100%;
     white-space: nowrap;
     position: relative;
     margin-bottom: 10rem;
     overflow: hidden;
-    margin-left: -50%;
+    margin-left: 0%;
 }
   
 .marquee {
@@ -25,6 +31,27 @@
     font-size: 8vw;
     font-family: "Merienda", cursive;
 }
+
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, rgb(11, 11, 11), rgba(255, 255, 255, 0));
+}
+
+.marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, rgb(11, 11, 11), rgba(255, 255, 255, 0));
+}
   
 @keyframes marquee {
     0% { transform: translate3d(0, 0, 0); }
@@ -32,15 +59,16 @@
 }
  
 @media only screen and (max-width: 768px) {
-    .marquee-container {
-        width: 200%;
-        white-space: nowrap;
-        position: relative;
+    .marquee-wrapper {
         margin-bottom: 5rem;
-        overflow: hidden;
-        margin-left: -50%;
+        width: calc(100% + 80px);
+        margin-left: -40px;
     }
     .marquee-item {
         font-size: 18vw;
     }
+}
+
+@media only screen and (min-width: 1400px) {
+
 }

@@ -11,7 +11,7 @@ function Navbar() {
 
     return (
         <div className='navLinks'>
-            <button tabindex="0" onClick={() => handleNav('/')}>Home</button>
+            <button tabIndex="0" onClick={() => handleNav('/')}>Home</button>
             <button onClick={() => handleNav('/projects')}>Projects</button>
             <button onClick={() => handleNav('/about')}>About</button>
             <button id='contactBtn' onClick={() => handleNav('/contact')}>Contact</button>

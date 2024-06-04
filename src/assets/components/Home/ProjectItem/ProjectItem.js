@@ -38,7 +38,7 @@ function ProjectItem({project}) {
             initial="hidden"
             animate={control}
         >
-            <div tabindex="0" className='projectItem' onClick={handleClick} onMouseEnter={handleHover} onMouseLeave={handleHover} 
+            <div tabIndex="0" className='projectItem' onClick={handleClick} onMouseEnter={handleHover} onMouseLeave={handleHover} 
                 onKeyDown={(e) => {
                     if (e.key === "Enter")
                         handleClick();
