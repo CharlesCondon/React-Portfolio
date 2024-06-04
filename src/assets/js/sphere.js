@@ -10,9 +10,9 @@ function sphere(p) {
     p.setup = () => {
         
         if (window.innerWidth > 768) {
-            cnv = p.createCanvas(window.innerWidth/2.5, window.innerHeight/1.25, p.WEBGL);
+            cnv = p.createCanvas(window.innerWidth/2-40, window.innerHeight/1.25, p.WEBGL);
         } else {
-            cnv = p.createCanvas(window.innerWidth, window.innerHeight/1.75, p.WEBGL);
+            cnv = p.createCanvas(window.innerWidth-40, window.innerHeight/1.75, p.WEBGL);
         }
         
     };
@@ -21,7 +21,7 @@ function sphere(p) {
         if (window.innerWidth > 768) {
             size = Math.floor(((window.innerWidth/1.75) * (window.innerHeight/1.25))/2500);
         } else {
-            size = Math.floor(((window.innerWidth*1.75) * (window.innerHeight/1.25))/2500);
+            size = Math.floor(((window.innerWidth*1.9) * (window.innerHeight/1.5))/2500);
         }
         
         p.background(17, 17, 17, 0);
@@ -44,9 +44,9 @@ function sphere(p) {
 
     p.windowResized = () => {
         if (window.innerWidth > 768) {
-            p.resizeCanvas(window.innerWidth/2.5, window.innerHeight/1.25)
+            p.resizeCanvas(window.innerWidth/2-40, window.innerHeight/1.25)
         } else {
-            p.resizeCanvas(window.innerWidth, window.innerHeight/1.25)
+            p.resizeCanvas(window.innerWidth-40, window.innerHeight/1.25)
         }
     }
 }

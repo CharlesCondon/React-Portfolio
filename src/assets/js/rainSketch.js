@@ -31,12 +31,12 @@ function rainSketch(p) {
     p.setup = () => {
         if (window.innerWidth > 768) {
             p.createCanvas(window.innerWidth, window.innerHeight);
-                for (var i = 0; i < 500; i++) {
+                for (let i = 0; i < 500; i++) {
                     drops[i] = new Drop();
             }
         } else {
             p.createCanvas(window.innerWidth, window.innerHeight);
-                for (var i = 0; i < 100; i++) {
+                for (let i = 0; i < 100; i++) {
                     drops[i] = new Drop();
             }
         }
@@ -44,7 +44,7 @@ function rainSketch(p) {
     
     p.draw = () => {
         p.background(0, 0, 0, 100);
-            for (var i = 0; i < drops.length; i++) {
+            for (let i = 0; i < drops.length; i++) {
                 drops[i].fall();
                 drops[i].show();
         }
