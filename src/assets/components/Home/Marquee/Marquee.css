@@ -60,7 +60,6 @@
  
 @media only screen and (max-width: 768px) {
     .marquee-wrapper {
-        margin-bottom: 5rem;
         width: calc(100% + 80px);
         margin-left: -40px;
     }
