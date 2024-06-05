@@ -26,7 +26,7 @@ function About() {
                 <div className='aboutHeadText'>
                     <div className='aboutParagraphs'>
                         <p>I was born and raised in a small suburb of Dallas, Texas, and now split my time between 
-                            New York and Dallas. A lifelong tech enthusiast and digital artist, I find joy in 
+                            New York and Dallas. A lifelong tech enthusiast and digital artist, I find fulfillment in 
                             blending creativity with technology.</p>
                         <p>My journey started with me earning a bachelor's degree in Computer Science from NYU. Along 
                             the way, I've worn many hats — from being a Technical Assistant at NYU to working as 
