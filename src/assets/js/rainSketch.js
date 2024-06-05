@@ -31,19 +31,19 @@ function rainSketch(p) {
     p.setup = () => {
         if (window.innerWidth > 768) {
             p.createCanvas(window.innerWidth, window.innerHeight);
-                for (let i = 0; i < 500; i++) {
+                for (let i = 0; i < 100; i++) {
                     drops[i] = new Drop();
             }
         } else {
             p.createCanvas(window.innerWidth, window.innerHeight);
-                for (let i = 0; i < 100; i++) {
+                for (let i = 0; i < 50; i++) {
                     drops[i] = new Drop();
             }
         }
     }
     
     p.draw = () => {
-        p.background(0, 0, 0, 100);
+        p.background(0, 0, 0, 50);
             for (let i = 0; i < drops.length; i++) {
                 drops[i].fall();
                 drops[i].show();

@@ -35,7 +35,7 @@ function About() {
                             views. This achievement reflects my passion for visual design and digital art, 
                             which I weave into every project I undertake.</p>
                         <p>When I’m not coding or designing, you might find me going for a run, drawing, animating 
-                            new pieces, or exploring the latest tech trends.</p>
+                            new pieces, or playing D&D.</p>
                     </div>
                         
                     <div className='aboutImg'>
