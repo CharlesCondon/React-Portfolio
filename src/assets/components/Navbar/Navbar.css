@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     padding: 40px;
+    
 }
 .navLinks > button {
     background-color: transparent;

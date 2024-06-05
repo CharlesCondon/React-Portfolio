@@ -80,7 +80,6 @@ function Projects() {
         <div className='projectsPageCont'>
             <div className='projectsHead'>
                 <h1>My Work</h1>
-                <p>I love what I do, so I'm always working on something new.<br/> Check out some of my past projects.</p>
             </div>
             <div className='projectsPageList'>
                 <ProjectList projects={projects} />

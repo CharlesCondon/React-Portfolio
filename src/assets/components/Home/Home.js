@@ -60,7 +60,7 @@ function Home() {
         <div className='homeCont'>
             <div className='homeHead'>
                 <div className='headText'>
-                    <h1>Charles Condon;</h1>
+                    <h1>Charles Condon</h1>
                     <p>Developer, Designer, Illustrator</p>
                 </div>
                 <div className='headImg'>
