@@ -5,9 +5,10 @@ import Home from './assets/components/Home/Home';
 import Projects from './assets/components/Projects/Projects';
 import About from './assets/components/About/About';
 import Contact from './assets/components/Contact/Contact';
-import Footer from './assets/components/Footer/Footer';
+//import Footer from './assets/components/Footer/Footer';
 import { ReactP5Wrapper } from '@p5-wrapper/react';
 import rainSketch from './assets/js/rainSketch';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
 	return (
@@ -33,6 +34,7 @@ function App() {
 					</Routes>
 				{/* <Footer/> */}
 			</div>
+			<SpeedInsights />
 		</div>
 	);
 }
