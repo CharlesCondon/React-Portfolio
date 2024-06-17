@@ -7,6 +7,7 @@ import cpc from '../../images/cpc.jpeg';
 import visualizer from '../../images/musicSite.jpeg';
 import visualizer2 from '../../images/musicSite2.jpeg';
 import wordle from '../../images/wordle.jpeg';
+import threes from '../../images/threes.jpeg';
 import ProjectList from './ProjectList/ProjectList';
 import { useLocation } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function Projects() {
     }, [location]);
 
     const descriptions = [
+        "The classic Threes dice game. Roll 6 dice and try to get the lowest score with threes equaling zero. Played solo or with up to 6 friends.",
         "A vacation planning application using computer vision AI to plan a full vacation for users based on input images.",
         "An ecommerce business partnered with an AI startup that takes your measurements for fitted suits without leaving one's home.",
         "A design studio website template created to showcase fullstack web development.",
@@ -33,44 +35,50 @@ function Projects() {
     ];
     const projects = [
         {
-            title:'Aura Vista',
+            title:'Threes',
             desc:descriptions[0],
+            image:threes,
+            url:"https://www.threesdice.com/"
+        },
+        {
+            title:'Aura Vista',
+            desc:descriptions[1],
             image:auraVista,
             url:"https://www.auradelvista.com/"
         },
         {
             title:'TALRD',
-            desc:descriptions[1],
+            desc:descriptions[2],
             image:talrd,
             url:"https://talrdsuits.com/"
         },
         {
             title:'CPC-Studio',
-            desc:descriptions[2],
+            desc:descriptions[3],
             image:cpc,
             url:"https://www.cpc-studio.com/"
         },
         {
             title:'Boss Plumbing',
-            desc:descriptions[3],
+            desc:descriptions[4],
             image:plumbing,
             url:"https://www.bossplumbingcorp.net/"
         },
         {
             title:'Music Visualizer',
-            desc:descriptions[4],
+            desc:descriptions[5],
             image:visualizer,
             url:"https://charlescondon.github.io/PerlinNoise/"
         },
         {
             title:'Music Visualizer 2',
-            desc:descriptions[5],
+            desc:descriptions[6],
             image:visualizer2,
             url:"https://charlescondon.github.io/Geosynth/"
         },
         {
             title:'Wordle 2',
-            desc:descriptions[6],
+            desc:descriptions[7],
             image:wordle,
             url:"https://www.wordletwo.com/"
         },

@@ -14,6 +14,7 @@ import visualizer2 from '../../images/musicSite2.jpeg';
 import wordle from '../../images/wordle.jpeg';
 import circle from '../../images/circle.png';
 import down from '../../images/down.png';
+import threes from '../../images/threes.jpeg';
 import Marquee from './Marquee/Marquee';
 import { useLocation } from "react-router-dom";
 
@@ -77,6 +78,7 @@ function Home() {
             <div className='projectsCont'>
                 <h2 id='Works'>Works</h2>
                 <div className='projectsList' >
+                    <ProjectItem  project={{ title:'Threes', image:threes, tags:['Website Design','Development', "UI/UX"], url:'https://www.threesdice.com/' }}/>
                     <ProjectItem  project={{ title:'CPC-Studio', image:cpc, tags:['Website Design','Development', 'Animation', "UI/UX"], url:'https://www.cpc-studio.com/' }}/>
                     <ProjectItem  project={{ title:'Aura Vista', image:auraVista, tags:['Website Design','Development', "UI/UX"], url:'https://www.auradelvista.com/' }}/>
                     <ProjectItem  project={{ title:'Boss Plumbing', image:plumbing, tags:['Website Design','UI/UX', 'Branding'], url:'https://www.bossplumbingcorp.net/' }}/>
