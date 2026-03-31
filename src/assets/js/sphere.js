@@ -1,7 +1,7 @@
 function sphere(p) {
     // eslint-disable-next-line no-unused-vars
     let xOff = 0;
-    let yOff = 1;
+    // let yOff = 1;
     let zOff = 2;
     // eslint-disable-next-line no-unused-vars
     let cnv;
@@ -38,7 +38,7 @@ function sphere(p) {
         p.sphere((size/2));
         
         xOff+=0.001;
-        yOff+=0.001;
+        // yOff+=0.001;
         zOff+=0.001;
     }
 
